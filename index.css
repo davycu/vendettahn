@@ -102,11 +102,25 @@ body {
 
 /* Footer (contador) */
 .footer {
-  margin-top: 8px;
-  padding: 5px;
-  color: #aaa;
-  font-size: 0.85rem;
+  text-align: center;
+  color: #ccc;
+  margin-top: 40px;
+  position: relative;
 }
+
+.footer #contador {
+  font-size: 1rem;
+  color: #fff;
+}
+
+/* version */
+.footer .version {
+  margin-top: 5px;
+  font-size: 0.55rem;
+  color: rgba(255, 255, 255, 0.4);
+  user-select: none;
+}
+
 
 .album {
   text-align: center;
@@ -129,7 +143,38 @@ body {
   transform: scale(1.05); /* Efecto zoom */
 }
 
-/* 🔹 Mobile */
+/* Botón de contacto */
+.contacto {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.contacto h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.contacto p {
+  margin-bottom: 15px;
+}
+
+.btn-contacto {
+  display: inline-block;
+  background-color: #1DB954; /* Verde Spotify */
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-contacto:hover {
+  background-color: #1ed760; /* Verde más claro en hover */
+  transform: scale(1.05);   /* pequeño zoom al pasar el mouse */
+}
+
+/* Mobile */
 @media (max-width: 768px) {
   .header img.logo {
     max-width: 240px;
